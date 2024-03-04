@@ -80,6 +80,8 @@ function caesarCipher(string, shift) {
             result += shiftLetter(letter, upperAlphabet);
         } else if (punctuation.includes(letter)) {
             result += letter;
+        } else if (letter === " ") {
+            result += " ";
         }
     }
 
